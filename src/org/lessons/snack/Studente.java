@@ -2,9 +2,9 @@ package org.lessons.snack;
 
 public class Studente {
 
-  public String nome;
-  public String cognome;
-  public int età;
+  private String nome;
+  private String cognome;
+  private int età;
 
   // constructor
   public Studente(String nome, String cognome, int età) {
