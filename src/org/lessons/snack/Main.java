@@ -4,9 +4,16 @@ public class Main {
 
   public static void main(String[] args) {
 
-    Studente student = new Studente("Giuseppe", "Colucci", 29);
+    Studente firstStudente = new Studente("Giuseppe", "Colucci", 29);
+    Studente secondStudente = new Studente("Davide", "Morisco", 27);
 
-    System.out.println(student.getFullStudente());
+    System.out.println(firstStudente.getFullStudente());
+
+    RegistroStudenti studenti = new RegistroStudenti();
+
+    studenti.addStudente(firstStudente);
+    studenti.addStudente(secondStudente);
+
+    studenti.getRegistro();
   }
-
 }
